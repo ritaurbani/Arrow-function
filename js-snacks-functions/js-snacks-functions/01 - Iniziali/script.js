@@ -10,11 +10,11 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 //  @returns {array}
 
 
-function namesArray ( ) {
+function namesArray (arr ) {
     let letterArray = [];
 
-    for ( let i=0; i<names.length; i++){
-        const currenntItem = names[i];
+    for ( let i=0; i<arr.length; i++){
+        const currenntItem = arr[i];
         let firstLetter = currenntItem.charAt(0)
         letterArray.push(firstLetter)
     } 
