@@ -12,20 +12,24 @@ const word = 'javascript';
  */
 function vowelNumber( parola) {
  const newString = "";
- const result = newString.length();
+ const vowelArray = ["a","b","c","d","e"]
+//  const result = newString.length();
  for (let i=0; i<parola.length;i++){
     let currentLetter = parola[i];
-    if (currentLetter 
- }
+    if (vowelArray.includes(currentLetter)) {
+        newString += currentLetter
+    }
+      
+}
  
-
- return result 
+ return result.lenght()
 }
 
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+const numVowel = vowelNumber(word)
+console.log(numVowel)
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
