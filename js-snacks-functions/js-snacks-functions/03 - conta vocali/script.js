@@ -5,14 +5,14 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 
-/**
- * Description
- * @param {string} parola
- * @returns {number}
- */
+
+// Description
+// @param {string} parola
+// @returns {number}
+
 function vowelNumber( parola) {
- const newString = "";
- const vowelArray = ["a","b","c","d","e"]
+ let newString = "";
+ const vowelArray = ["a","e","i","o","u"]
 //  const result = newString.length();
  for (let i=0; i<parola.length;i++){
     let currentLetter = parola[i];
@@ -22,7 +22,7 @@ function vowelNumber( parola) {
       
 }
  
- return result.lenght()
+ return newString.length
 }
 
 
